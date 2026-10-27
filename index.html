@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>SecureNet Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+        <h2>🛡 SecureNet</h2>
+        <p class="subtitle">SECURITY CENTER</p>
+
+        <nav>
+            <a href="#overview">◈ Overview</a>
+            <a href="#traffic">◉ Network Traffic</a>
+            <a href="#threats">⚠ Threat Detection</a>
+            <a href="#events">▤ Security Events</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span class="online-dot"></span>
+            System Online
+        </div>
+    </aside>
+
+    <main class="content">
+        <header>
+            <div>
+                <p class="eyebrow">SECURITY OPERATIONS</p>
+                <h1>Network Security Dashboard</h1>
+                <p class="description">
+                    Infrastructure monitoring and threat analysis
+                </p>
+            </div>
+            <span class="status">● System Protected</span>
+        </header>
+
+        <section id="overview" class="cards">
+            <div class="card">
+                <p>Active Connections</p>
+                <h2>1,284</h2>
+                <span class="green">↑ 12.5% today</span>
+            </div>
+
+            <div class="card">
+                <p>Blocked Threats</p>
+                <h2>347</h2>
+                <span class="red">28 critical attempts</span>
+            </div>
+
+            <div class="card">
+                <p>Protected Devices</p>
+                <h2>86</h2>
+                <span class="green">All devices monitored</span>
+            </div>
+
+            <div class="card">
+                <p>Security Score</p>
+                <h2>96%</h2>
+                <span class="green">Excellent protection</span>
+            </div>
+        </section>
+
+        <section class="panels">
+            <div id="traffic" class="panel">
+                <h3>Network Traffic</h3>
+                <p class="muted">Traffic activity overview</p>
+
+                <div class="chart">
+                    <div style="height:45%"></div>
+                    <div style="height:70%"></div>
+                    <div style="height:55%"></div>
+                    <div style="height:90%"></div>
+                    <div style="height:65%"></div>
+                    <div style="height:82%"></div>
+                    <div style="height:58%"></div>
+                    <div style="height:95%"></div>
+                    <div style="height:72%"></div>
+                    <div style="height:85%"></div>
+                    <div style="height:62%"></div>
+                    <div style="height:78%"></div>
+                </div>
+                <div class="chart-labels">
+                    <span>00:00</span>
+                    <span>06:00</span>
+                    <span>12:00</span>
+                    <span>18:00</span>
+                    <span>23:59</span>
+                </div>
+            </div>
+
+            <div id="threats" class="panel">
+                <h3>Threat Distribution</h3>
+                <p class="muted">Detected security events</p>
+
+                <div class="threat">
+                    <span>Malware</span>
+                    <strong>42%</strong>
+                </div>
+                <div class="progress">
+                    <div style="width:42%"></div>
+                </div>
+
+                <div class="threat">
+                    <span>Brute Force</span>
+                    <strong>30%</strong>
+                </div>
+                <div class="progress">
+                    <div style="width:30%"></div>
+                </div>
+
+                <div class="threat">
+                    <span>Phishing</span>
+                    <strong>18%</strong>
+                </div>
+                <div class="progress">
+                    <div style="width:18%"></div>
+                </div>
+
+                <div class="threat">
+                    <span>Other</span>
+                    <strong>10%</strong>
+                </div>
+                <div class="progress">
+                    <div style="width:10%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="panel events">
+            <h3>Recent Security Events</h3>
+            <p class="muted">Latest detected activities</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Source IP</th>
+                        <th>Severity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14:32:08</td>
+                        <td>Brute Force Attempt</td>
+                        <td>192.0.2.45</td>
+                        <td><span class="tag high">High</span></td>
+                        <td>Blocked</td>
+                    </tr>
+                    <tr>
+                        <td>14:28:15</td>
+                        <td>Suspicious Login</td>
+                        <td>198.51.100.23</td>
+                        <td><span class="tag medium">Medium</span></td>
+                        <td>Investigating</td>
+                    </tr>
+                    <tr>
+                        <td>14:15:42</td>
+                        <td>Firewall Rule Updated</td>
+                        <td>Internal</td>
+                        <td><span class="tag low">Low</span></td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>13:56:11</td>
+                        <td>Malware Signature Match</td>
+                        <td>203.0.113.17</td>
+                        <td><span class="tag high">High</span></td>
+                        <td>Blocked</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            SecureNet Monitor © 2026 |
+            Docker Containerization Project |
+            Demo Data
+        </footer>
+    </main>
+</div>
+
+</body>
+</html>

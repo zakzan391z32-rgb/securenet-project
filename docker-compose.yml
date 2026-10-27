@@ -1,0 +1,31 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: securenet-nginx
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+
+  database:
+    image: postgres:17
+    container_name: securenet-db
+    environment:
+      POSTGRES_USER: securenet
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: network_security
+    ports:
+      - "127.0.0.1:5434:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  website:
+    build: .
+    image: securenet-monitor:v1
+    container_name: securenet-web
+    ports:
+      - "8091:80"
+    restart: unless-stopped
+
+volumes:
+  db_data:
